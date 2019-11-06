@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+	<body>
+		<div id="header">
+
+        </div>
+        <div id="form-box" class="container">
+            <form >
+                <label for="url">URL</label>
+                <input type="text" name="url" placeholder="Url" pattern="^(http|https)://" title="Not valid URL (http || https)">
+                <label for="email">Email address</label>
+                <input type="text" name="email" placeholder="Enter email">
+                <div style="color: #8f969e; margin-bottom: 30px;">We'll never share your email with anyone else.</div>
+                <label for="pass">Password</label>
+                <input type="text" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 10 or more characters">
+            
+                <input type="checkbox" value="Bike" style="margin-bottom: 10px;">Check me out<br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="footer">
+
+        </div>
+	</body>
+</html>

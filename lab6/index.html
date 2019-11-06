@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body onload="drawList()" style="padding-bottom: 200px;">
+    <div id="box" style="width:90%; margin: auto;">
+        <h1>Hello Javascript();</h1>
+        <p id="time">
+            <script>
+                document.write(Date());
+            </script>
+        </p>
+
+        <form name="myForm" style="margin-bottom: 100px;">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Student ID</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="000-XX-XXX" name="studentID">
+                <small id="emailHelp" class="form-text text-muted">Your unique student Identification number</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">First Name</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="e.g John" name="fname">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="addStudent()">Submit</button>
+        </form>
+
+        <ul id="myList" class="list-group" style="margin-top: 30px;">
+            <li class="list-group-item active">Student Names</li>
+        </ul>
+    </div>
+</body>
+
+</html>
